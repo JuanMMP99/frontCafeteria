@@ -1,0 +1,38 @@
+<body>
+    
+    <section id="contact">
+        <br>
+        <div class="sectionheader">
+            <h1 align="center">Contáctanos</h1>
+        </div>
+        <article>
+            <div align="center">
+
+                <p>Ingresa tus datos para poder recibir más información acerca de los servicios que ofrecemos,
+                    <strong>da
+                        click</strong> en el sobre y nos pondremos en contacto contigo lo más pronto posible.
+                </p>
+                <img src="assets/images/dezlizar.png" alt="..." class="imgClick">
+            </div>
+
+            <label for="checkcontact" class="contactbutton">
+                <div class="mail"></div>
+            </label><input id="checkcontact" type="checkbox">
+
+            <form action="https://formsubmit.co/d49e9965aa48b118a6906e679a5ff692" method="POST" class="contactform">
+                <p class="input_wrapper"><input type="text" name="Nombre" value="" id="contact_nom" required><label
+                        for="contact_nom">Nombre</label></p>
+                <p class="input_wrapper"><input type="text" name="Email" value="" id="contact_email" required><label
+                        for="contact_email">Email</label></p>
+                <p class="input_wrapper"><input type="text" name="Telefono" value="" id="contact_sujet" required><label
+                        for="contact_sujet">Teléfono</label></p>
+                <p class="textarea_wrapper"><textarea name="Mensaje" id="contact_message"
+                        placeholder="Ingresa algún mensaje (esta opción es opcional)..."></textarea></p>
+                <p class="submit_wrapper"><input type="submit" value="Enviar"></p>
+                <input type="hidden" name="_next" value="">
+                <input type="hidden" name="_captcha" value="false">
+            </form>
+        </article>
+        <a routerLink="/inicio" class="btn-flotante">Volver</a>
+    </section><br>
+</body>

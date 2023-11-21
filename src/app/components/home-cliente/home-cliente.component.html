@@ -1,0 +1,477 @@
+<body>
+
+    <div class="hero_area">
+        <div class="bg-box">
+            <img src="assets/images/cafeteria3.jpg" alt="..." class="overlay">
+        </div>
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" href="index.html">
+                        <span>
+                            <img class="logo" src="assets/images/favicon.png" alt="">&nbsp;UTCafé
+                        </span>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class=""> </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  mx-auto ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/home">Menú</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/sobre-nosotros">Sobre nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" href="/contacto">Contáctanos</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:void(0);" (click)="confirmarAlert()" style="cursor: pointer;">
+                                    <i class="bi bi-box-arrow-left"></i> &nbsp; Cerrar sesión
+                                  </a>
+                            </li>
+                        </ul>
+                        <div class="user_option">
+                            <a href="" class="user_link" routerLink="/perfil-cliente">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </a>
+                            <a class="cart_link" routerLink="/menu/home">
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;"
+                                    xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <g>
+                                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </a>
+                            <form class="form-inline">
+                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </form>
+                            <a routerLink="./bebidas" class="order_online">
+                                Ordenar
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+
+        <!-- slider section -->
+        <section class="slider_section ">
+            <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-7 col-lg-6 ">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Cafetería Universitaria
+                                        </h1>
+                                        Ordena tus platillos y bebidas de una manera fácil y sencilla, ordena desde la
+                                        aplicación y escoge un metodo de pago.
+                                        <div class="btn-box"><br>
+                                            <a routerLink="/login" class="btn1">
+                                                Ver menú
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-7 col-lg-6 ">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Ordena de forma fácil
+                                        </h1>
+                                        <p>
+                                            Escoge que es lo que quieres comer hoy y compra para después pasar por tus
+                                            platillos, evita hacer filas y ahorra tiempo con una herramienta fácil de
+                                            usar.
+                                        </p>
+                                        <div class="btn-box">
+                                            <a routerLink="/login" class="btn1">
+                                                Ordenar ahora
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container ">
+                            <div class="row">
+                                <div class="col-md-7 col-lg-6 ">
+                                    <div class="detail-box">
+                                        <h1>
+                                            Conoce los platillos del día
+                                        </h1>
+                                        <p>
+                                            Todos los días actualizamos el menú para que puedas disfrutar de deliciosos
+                                            platillos y bebidas, además de tener ofertas en platillos seleccionados.
+                                        </p>
+                                        <div class="btn-box">
+                                            <a routerLink="/login" class="btn1">
+                                                Ver más
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <ol class="carousel-indicators">
+                        <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#customCarousel1" data-slide-to="1"></li>
+                        <li data-target="#customCarousel1" data-slide-to="2"></li>
+                    </ol>
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <!-- end slider section -->
+
+    <!-- offer section -->
+
+    <section class="offer_section layout_padding-bottom">
+        <div class="offer_container">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-md-6  ">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="assets/images/o1.jpg" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Jueves de hamburguesas
+                                </h5>
+                                <h6>
+                                    <span>10%</span> Descuento
+                                </h6>
+                                <a routerLink="/login">
+                                    Comprar <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;"
+                                        xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                     c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                     C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                     c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                     C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                     c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                                            </g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6  ">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="assets/images/o2.jpg" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Viernes de pizza
+                                </h5>
+                                <h6>
+                                    <span>15%</span> Descuento
+                                </h6>
+                                <a routerLink="/login">
+                                    Comprar <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;"
+                                        xml:space="preserve">
+                                        <g>
+                                            <g>
+                                                <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
+                     c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
+                     C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
+                     c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
+                     C457.728,97.71,450.56,86.958,439.296,84.91z" />
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
+                     c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
+                                            </g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end offer section -->
+
+    <!-- about section -->
+
+    <div>
+
+        <section class="about_section layout_padding">
+            <div class="container  ">
+
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="img-box">
+                            <img src="assets/images/about-img.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="detail-box">
+                            <div class="heading_container">
+                                <h2>
+                                    Cafetería de la UTVCO
+                                </h2>
+                            </div>
+                            <p>
+                                Dentro de la cafetería universitaria encontrarás una variedad de platillos, postres y
+                                bebidas, variando el menú con la especialidad del día y con esto logrando que la
+                                comunidad UTVCO tenga un almuerzo agradable y que con esta herramienta sea más fácil el
+                                poder ordenar los alimentos y mejorar la eficacia del servicio de comida.
+                            </p>
+                            <a routerLink="/sobre-nosotros">
+                                Ver más
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end about section -->
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container" id="contacto">
+            <div class="row">
+                <div class="col-md-4 footer-col">
+                    <div class="footer_contact">
+                        <h4>
+                            Contactános
+                        </h4>
+                        <div class="contact_link_box">
+                            <a href="https://goo.gl/maps/K6KG4AqmkhUTRpa66">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                <span>
+                                    Av. Universidad S/N
+                                    San Pablo Huixtepec
+                                    Zimatlán, Oax.
+                                    C.P. 71265
+                                </span>
+                            </a>
+                            <a href="tel:9513995156">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>
+                                    (52)+ 951 399 5156
+                                </span>
+                            </a>
+                            <a href="mailto:contacto@utvco.edu.mx">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <span>
+                                    contacto@utvco.edu.mx
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <div class="footer_detail">
+                        <a href="" class="footer-logo">
+                            UTCafé
+                        </a>
+                        <p>
+                            Aplicación web de cafetería universitaria de la Universidad Tecnologica de los Valles
+                            Centrales de Oaxaca.
+                        </p>
+                        <div class="footer_social">
+                            <a href="https://www.facebook.com/utvcoaxaca/?locale=es_LA">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://twitter.com/utvco?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                            <a href="https://www.instagram.com/utvco/?hl=es">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-col">
+                    <h4>
+                        Horario de servicio
+                    </h4>
+                    <p>
+                        De lunes a viernes
+                    </p>
+                    <p>
+                        10.00 Am - 3:00 Pm
+                    </p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="https://www.facebook.com/dgsutvco/">© 2023 | Desarrollo y Gestión de
+                        Software</a><br><br>
+                    <a href="https://utvco.edu.mx/" target="_blank">© 2023 | Universidad Tecnológica de los Valles
+                        Centrales de Oaxaca</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+</body>

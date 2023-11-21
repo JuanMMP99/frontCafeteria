@@ -1,0 +1,24 @@
+<section class="perfil-usuario">
+    <div class="contenedor-perfil">
+        <div class="portada-perfil" style="background-image: url('assets/images/cafeteria.jpg');">
+            <div class="sombra"></div>
+            <div class="avatar-perfil">
+                <img src="assets/images/user.jpeg" alt="img">
+                <a href="#" class="cambiar-foto">
+                    <input type="file">
+                </a>
+            </div>
+            <div class="datos-perfil">
+                <h4 class="titulo-usuario">{{userD?.name}} {{userD?.lastname}}</h4>
+                <p class="bio-usuario">Usuario de la cafetería universitaria de la UTVCO.</p>
+                <ul class="lista-perfil">
+                    <li><strong>Matricula:</strong> {{userD?.mat}}</li>
+                    <li><strong>Email:</strong> {{userD?.email}}</li>
+                </ul>
+            </div>
+            <div class="opcciones-perfil">
+                <button routerLink="/menu/home"><strong>Volver</strong></button>
+            </div>
+        </div>
+    </div>
+</section>

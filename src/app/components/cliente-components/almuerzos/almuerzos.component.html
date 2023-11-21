@@ -1,0 +1,34 @@
+<body>
+    <section class="food_section layout_padding-bottom">
+        <div class="container">
+            <div class="heading_container heading_center">
+                <div class="filters-content">
+                    <!-- Usamos un ngFor para iterar sobre cada elemento en cursoArr -->
+                    <div class="row mt-4">
+                        <div class="col-md-4" *ngFor="let a of cursoArr">
+                            <div class="box">
+                                <div>
+                                    <div class="img-box">
+                                        <img src="assets/images/f1.png" alt="">
+                                    </div>
+                                    <div class="detail-box">
+                                        <h5>{{a.name}}</h5>
+                                        <p>{{a.desc}}</p>
+                                        <p>{{"$" + a.price}}</p>
+                                        <br>
+                                        <div class="options">
+                                            <h6><strong>Comprar ahora</strong></h6>
+                                            <a href="metodo-pago">
+                                                <i class="fas fa-shopping-cart"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

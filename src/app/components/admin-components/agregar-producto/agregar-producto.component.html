@@ -1,0 +1,50 @@
+<body>
+    <div class="card">
+        <!-- <div align="center" class="p-1">
+            <img src="/assets/images/logo.png" class="logo">
+        </div> -->
+        <div class="p-3" align="center">
+            <span class="title">Agregar Producto</span>
+        </div>
+        <form class="form" [formGroup]="asesoriaForm" (ngSubmit)="saveData()">
+
+            <div class="group">
+                <input placeholder="‎" type="text" required="" formControlName="nombre" (change)="updateProgress()">
+                <label for="name">Nombre del producto</label>
+            </div>
+            <div class="group">
+                <input placeholder="‎" type="number" formControlName="precio" (change)="updateProgress()" required="">
+                <label for="email">Costo del producto</label>
+            </div>
+            <div class="group">
+                <textarea placeholder="‎" id="exampleFormControlTextarea1" rows="3" formControlName="desc"
+                    (change)="updateProgress()" required=""
+                    minlength="1" maxlength="5"></textarea>
+                <label for="comment">Descripción del producto</label>
+            </div>
+
+
+            <div class="mb-2">
+                <label class="form-label">Categoria:</label>
+                <select class="form-control" formControlName="category_id"
+                    [ngClass]="{ 'error-field': asesoriaForm.get('category_id')?.invalid && asesoriaForm.get('category_id')?.touched }"
+                    (change)="updateProgress()">
+                    <option value="" disabled selected>Seleccione la categoria</option>
+                    <option value="1">DESAYUNO</option>
+                    <option value="2">ALMUERZO</option>
+                    <option value="3">COMIDA</option>
+                </select>
+                <div *ngIf="asesoriaForm.get('category_id')?.invalid && asesoriaForm.get('category_id')?.touched"
+                    class="error-message">La categoria es requerida</div>
+            </div>
+            <p><br></p>
+
+            <button type="submit">Agregar</button>
+
+
+            <p></p>
+        </form>
+    </div>
+
+
+</body>
