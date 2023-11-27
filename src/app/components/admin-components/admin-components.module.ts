@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { PerfilAdminComponent } from './perfil-admin/perfil-admin.component';
 import { AgregarProductoComponent } from './agregar-producto/agregar-producto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,7 +16,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule,
+    HttpClientModule,
   ]
 })
 export class AdminComponentsModule { }

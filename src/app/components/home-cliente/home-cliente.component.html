@@ -34,17 +34,20 @@
                             <li class="nav-item">
                                 <a class="nav-link scrollto" href="/contacto">Contáctanos</a>
                             </li>
-                            <li>
+                            <li class="nav-item">
+                                <a class="nav-link scrollto" (click)="confirmarAlert()">Cerrar sesión</a>
+                            </li>
+                            <!-- <li>
                                 <a class="dropdown-item" href="javascript:void(0);" (click)="confirmarAlert()" style="cursor: pointer;">
                                     <i class="bi bi-box-arrow-left"></i> &nbsp; Cerrar sesión
                                   </a>
-                            </li>
+                            </li> -->
                         </ul>
                         <div class="user_option">
                             <a href="" class="user_link" routerLink="/perfil-cliente">
                                 <i class="fa fa-user" aria-hidden="true"></i>
                             </a>
-                            <a class="cart_link" routerLink="/menu/home">
+                            <a class="card_link" routerLink="/menu/home">
                                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                     viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;"
@@ -106,7 +109,7 @@
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                 </button>
                             </form>
-                            <a routerLink="./bebidas" class="order_online">
+                            <a routerLink="/home" class="order_online">
                                 Ordenar
                             </a>
                         </div>
@@ -131,7 +134,7 @@
                                         Ordena tus platillos y bebidas de una manera fácil y sencilla, ordena desde la
                                         aplicación y escoge un metodo de pago.
                                         <div class="btn-box"><br>
-                                            <a routerLink="/login" class="btn1">
+                                            <a routerLink="/home" class="btn1">
                                                 Ver menú
                                             </a>
                                         </div>
@@ -154,7 +157,7 @@
                                             usar.
                                         </p>
                                         <div class="btn-box">
-                                            <a routerLink="/login" class="btn1">
+                                            <a routerLink="/home" class="btn1">
                                                 Ordenar ahora
                                             </a>
                                         </div>
@@ -176,7 +179,7 @@
                                             platillos y bebidas, además de tener ofertas en platillos seleccionados.
                                         </p>
                                         <div class="btn-box">
-                                            <a routerLink="/login" class="btn1">
+                                            <a routerLink="/home" class="btn1">
                                                 Ver más
                                             </a>
                                         </div>

@@ -24,7 +24,7 @@ export class CompraProductoComponent {
 
 
   navigateAndClose(): void {
-    const route = '/menu/metodo-pago';
+    const route = '/metodo-pago';
 
     // Navega a la ruta específica
     this.router.navigateByUrl(route);

@@ -1,12 +1,14 @@
 body {
-    background-size: cover;
-    height: 100vh;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    font-size: 12pt;
-    color: #2A293E;
-  }
+  background-image: url('/assets/images/cafe.png');
+  background-size: cover;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  font-size: 12pt;
+  color: #2A293E;
+}
+
   
   .button {
     display: flex;
@@ -51,7 +53,7 @@ body {
   }
   
   .card {
-    width: 750px;
+    width: 350px;
     background: white;
     border-radius: 25px;
     padding: 20px;

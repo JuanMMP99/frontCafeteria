@@ -1,4 +1,6 @@
 <body>
+    <a routerLink="/home-admin" class="btn-flotante">Regresar</a>
+
     <div class="card">
         <!-- <div align="center" class="p-1">
             <img src="/assets/images/logo.png" class="logo">
@@ -18,8 +20,7 @@
             </div>
             <div class="group">
                 <textarea placeholder="‎" id="exampleFormControlTextarea1" rows="3" formControlName="desc"
-                    (change)="updateProgress()" required=""
-                    minlength="1" maxlength="5"></textarea>
+                    (change)="updateProgress()" required="" minlength="1" maxlength="50"></textarea>
                 <label for="comment">Descripción del producto</label>
             </div>
 
@@ -40,8 +41,6 @@
             <p><br></p>
 
             <button type="submit">Agregar</button>
-
-
             <p></p>
         </form>
     </div>

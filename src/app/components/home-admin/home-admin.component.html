@@ -1,28 +1,37 @@
 <body>
-    <div class="card">
-        <div align="center">
-            <img src="/assets/images/logo.png" style="height: 135px; width: 125px;" alt="">
-        </div><br>
-        <span class="title" align="center">Opciones Administrador</span>
-        <p class="description" align="center">En este apartado puedes agregar un producto o ver tu perfil. En el primer
-            apartado podrás agregar un almuerzo, bebida y postre dentro de los cuales se podrá crear cards y el segun
-            para ver tu perfil Admin</p><br>
+    <div class="hero_area">
+        <header class="header_section">
+            <div class="container"><br>
+                <div class="card">
+                    <div align="center">
+                        <img src="/assets/images/logo.png" style="height: 135px; width: 125px;" alt="">
+                    </div><br>
+                    <span class="title" align="center">Opciones Administrador</span>
+                    <p class="description" align="center">En este apartado puedes agregar un producto o ver tu perfil.
+                    </p><br>
 
-        <div align="center">
+                    <div align="center">
 
-            <button class="button" routerLink="/agregar-producto">
-                <span class="lable">Agregar producto</span>
-            </button>
-            <br>
-            <button class="button" routerLink="/perfil-admin">
-                <span class="lable">Ver perfil</span>
-            </button>
-            <li>
-                <a class="dropdown-item" href="javascript:void(0);" (click)="confirmarAlert()" style="cursor: pointer;">
-                    <i class="bi bi-box-arrow-left"></i> &nbsp; Cerrar sesión
-                  </a>
-            </li>
-        </div>
-        <br>
+                        <button class="button" routerLink="/agregar-producto">
+                            <span class="lable">Agregar producto</span>
+                        </button>
+                        <br>
+                        <button class="button" routerLink="/perfil-admin">
+                            <span class="lable">Ver perfil</span>
+                        </button>
+                        <li>
+                            <a class="dropdown-item" href="javascript:void(0);" (click)="confirmarAlert()"
+                                style="cursor: pointer;">
+                                <i class="bi bi-box-arrow-left"></i> &nbsp; Cerrar sesión
+                            </a>
+                        </li>
+                    </div>
+                    <br>
+                </div>
+
+            </div>
+        </header>
     </div>
+
+
 </body>
