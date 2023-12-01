@@ -39,9 +39,7 @@ const routes: Routes = [
   { path: 'comprar-producto', component: CompraProductoComponent },
   { path: 'comprar', component: CompraProductoComponent },
   { path: 'ofertas', component: OfertasComponent },
-
-
-
+  
 
   //Carpeta Cliente-components (components de vista de usuario Cliente)
   {
