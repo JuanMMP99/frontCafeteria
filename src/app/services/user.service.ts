@@ -282,7 +282,7 @@ export class UserService {
       });
 
       // Realizar la solicitud a la API utilizando el token en las cabeceras
-      return this.http.get(this.url + '/api/productos', { headers });
+      return this.http.get<any>(`${this.url}/productos`);
     } else {
       // Si el usuario no está autenticado o no hay token, redirigir a la página de inicio de sesión u otra página apropiada.
       // Por ejemplo, puedes utilizar un guard para proteger la ruta y redirigir en caso de que el usuario no esté autenticado.
@@ -669,6 +669,10 @@ export class UserService {
       // Aquí retornamos un observable vacío, pero puedes manejar el redireccionamiento según tu lógica.
       return new Observable(); // Puedes también retornar throwError o un observable vacío, según tu necesidad.
     }
+  }
+
+  getProductsByCategory(categoryId: number): Observable<any> {
+    return this.http.get<any>(`${this.url}/api/products/category/${categoryId}`);
   }
 
 

@@ -10,6 +10,9 @@
         </div>
         <form class="form" [formGroup]="asesoriaForm" (ngSubmit)="saveData()">
 
+            <input type="file" (change)="onFileSelected($event)" accept="image/*" style="display: none;" id="fileInput" #fileInput>
+            <label for="fileInput">Seleccionar imagen</label>
+            
             <div class="group">
                 <input placeholder="‎" type="text" required="" formControlName="nombre" (change)="updateProgress()">
                 <label for="name">Nombre del producto</label>

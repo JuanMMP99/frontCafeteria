@@ -1,36 +1,12 @@
-<body>
-    <section class="food_section layout_padding-bottom">
-        <div class="container">
-            <div class="heading_container heading_center">
-                <div class="filters-content">
-                    <a routerLink="/home" class="btn-flotante">Menú</a>
+<div class="card-container">
+  <div class="card" *ngFor="let product of products">
+    <img [src]="product.image" class="card-img-top" alt="Product Image">
+    <div class="card-body">
+      <h5 class="card-title">{{ product.name }}</h5>
+      <p class="card-text">Precio: {{ product.price }}</p>
+      <!-- Aquí puedes añadir más detalles del producto si los tienes en tu modelo -->
+      <a href="#" class="btn btn-primary">Ver detalles</a>
+    </div>
+  </div>
+</div>
 
-                    <!-- Usamos un ngFor para iterar sobre cada elemento en cursoArr -->
-                    <div class="row mt-4">
-                        <div class="col-md-4" *ngFor="let a of cursoArr">
-                            <div class="box">
-                                <div>
-                                    <div class="img-box">
-                                        <img src="assets/images/f1.png" alt="">
-                                    </div>
-                                    <div class="detail-box">
-                                        <h5>{{a.name}}</h5>
-                                        <p>{{a.desc}}</p>
-                                        <p>{{"$" + a.price}}</p>
-                                        <br>
-                                        <div class="options">
-                                            <h6><strong>Comprar ahora</strong></h6>
-                                            <a href="metodo-pago">
-                                                <i class="fas fa-shopping-card"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</body>
