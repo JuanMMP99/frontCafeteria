@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { OfertasComponent } from './ofertas/ofertas.component';
 
 const routes: Routes = [
 
@@ -28,7 +29,8 @@ const routes: Routes = [
     CompraProductoComponent,
     MetodoPagoComponent,
     HomeComponent,
-    MenuComponent
+    MenuComponent,
+    OfertasComponent
   ],
   imports: [
     CommonModule,

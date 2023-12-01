@@ -19,6 +19,7 @@ import { MetodoPagoComponent } from './components/cliente-components/metodo-pago
 import { PerfilClienteComponent } from './components/cliente-components/perfil-cliente/perfil-cliente.component';
 import { AgregarProductoComponent } from './components/admin-components/agregar-producto/agregar-producto.component';
 import { AdmingGuard } from './guards/adming.guard';
+import { OfertasComponent } from './components/cliente-components/ofertas/ofertas.component';
 
 const routes: Routes = [
 
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'perfil-admin', component: PerfilAdminComponent },
   { path: 'comprar-producto', component: CompraProductoComponent },
   { path: 'comprar', component: CompraProductoComponent },
+  { path: 'ofertas', component: OfertasComponent },
 
 
 
