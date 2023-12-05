@@ -29,7 +29,7 @@ export class AgregarProductoComponent {
   asesoriaForm: FormGroup = this.theForm.group({
     nombre: ["", [Validators.required, Validators.minLength(3)]],
     precio: ["", [Validators.required, Validators.min(1), Validators.max(999)]],
-    desc: ["", [Validators.required, Validators.maxLength(5)]],
+    desc: ["", [Validators.required, Validators.maxLength(25)]],
     category_id: ["", Validators.required],
     image: [null, Validators.required] // Añade el campo para la imagen
   })
